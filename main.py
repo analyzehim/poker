@@ -1,11 +1,17 @@
 import random
 import time
 import cards
-from operator import itemgetter
-time.sleep(1)
+import poker
+from cards import print_cards
 
-deck = cards.Deck(1)
-print "Go"
+deck = cards.Deck()
+
+print deck
+
+
+
+
+'''
 try:
     time_stamp = time.time()
     mas = []
@@ -23,10 +29,10 @@ try:
             
         
         steps +=1
-        '''
+
         if steps ==4:
             break
-        '''
+
 
         count = 0.0
         comb_count = 0.0
@@ -73,7 +79,7 @@ except:
 
     
 
-'''
+
 deck = cards.Deck()
 rounds = 0
 comb_count = 0
@@ -149,11 +155,7 @@ hand = [cards.Card(12,3),cards.Card(11,3),cards.Card(3,3),cards.Card(9,0),cards.
 print cards.check_comb(hand)
 for card in hand:
     deck.remove_card(card)
-'''
 
-
-
-'''
 
     if len(hand) ==5:
         maps = deck.get_two_cards()
